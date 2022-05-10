@@ -22,13 +22,16 @@ body{
     background: #fff;
     border: 1px solid #778;
     border-radius: 5px;
-    padding: 30px 20px;
+    height: 350px;
+
 }
 .modal-close {
     position: absolute;
-    right: 15px;
-    top: 5px;
+    right: 25px;
+    top: 15px;
     cursor: pointer;
+    background: white;
+    border: none;
 }
 
 .grid-container {
@@ -51,12 +54,13 @@ body{
     justify-self: center;
     border: .5px lightgrey solid;
     border-radius: 3%;
-    margin: 30px;
-    height: 100px;
-    width: 400px;
+    margin: 20px;
+    height: 370px;
+    width: 350px;
     max-height: 100px;
     max-width: 400px;
     cursor: pointer;
+    padding: 14px;
 }
 .name{
     font-size: .75rem;
@@ -83,10 +87,16 @@ body{
 }
 header{
     font-size: .5rem;
-    margin: 20px 10px;
+    
 }
 h1{
     font-size: x-large;
-    margin-left: 44px;
-    margin-bottom: -20px;
+    margin-left: 35px;
+    padding: 20px;
+
+}
+.modal-content{
+    margin: 20px;
+    padding: 10px;
+    
 }

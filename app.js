@@ -49,8 +49,9 @@ function displayModal(index) {
   <div class="text-container">
   <h2 class="name">${name.first} ${name.last}</h2>
   <p class="email">${email}</p>
-  <p class="address">${city}</p>
-  <hr />
+  <p class="address">${city}</p><br>
+  <hr/>
+  <br>
   <p>${phone}</p>
   <p class="address">${street.number}, ${street.name},${state} ${postcode}</p>
   <p>Birthday:
