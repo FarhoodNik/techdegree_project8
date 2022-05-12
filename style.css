@@ -1,13 +1,15 @@
 
 *{
-    padding: 0;
+    padding: opx;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     position: relative;
+    padding: 3.5em;
 }
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -22,7 +24,6 @@ body{
     background: #fff;
     border: 1px solid #778;
     border-radius: 5px;
-    height: 350px;
 
 }
 .modal-close {
@@ -36,12 +37,11 @@ body{
 
 .grid-container {
     display: grid;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-items: stretch;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1.5em;
+}
+  
 .hidden {
     display: none;
 }
@@ -49,41 +49,40 @@ body{
     grid-column: 1;
 }
 .card{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-self: center;
-    border: .5px lightgrey solid;
-    border-radius: 3%;
-    margin: 20px;
-    height: 370px;
-    width: 350px;
-    max-height: 100px;
-    max-width: 400px;
-    cursor: pointer;
-    padding: 14px;
+    
+    padding: 1.5em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+    
+
 }
 .name{
-    font-size: .75rem;
-    margin-bottom: 3px;
+    font-size: .1.2em;
+    margin-bottom: 5px;
+    
 }
 .email{
-    font-size: .75rem;
-    margin-bottom: 3px;
+    
+    margin-bottom: 5px;
+    color: #778;
 }
-.address{
-    font-size: .75rem;
+.address  {
+    
+    color: #778;
 }
-.avatar{
-    grid-column: 1;
-    border-radius: 50%;
-    width:75px;
-    height: 75px;
-    align-self: center;
-    justify-self: center;
+p{
+    color: #778;
+    margin-bottom: 5px;
 }
+
 .text-container{
-    grid-column: 2;
-    align-self: center;
+    margin: 2em;
+    size: 20px;
 }
 header{
     font-size: .5rem;
@@ -91,8 +90,8 @@ header{
 }
 h1{
     font-size: x-large;
-    margin-left: 35px;
-    padding: 20px;
+    margin-bottom: 1em;
+    margin-top: -40px;
 
 }
 .modal-content{
@@ -100,3 +99,8 @@ h1{
     padding: 10px;
     
 }
+img {
+    border-radius: 50%;
+}
+
+
